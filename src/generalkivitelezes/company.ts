@@ -1,4 +1,5 @@
 import {
+  AboutUsItem,
   CompanyInfo,
   Service,
   ServiceExplain,
@@ -87,6 +88,27 @@ const servicesExplained: ServiceExplain[] = [
   },
 ];
 
+const aboutUs: AboutUsItem[] = [
+  {
+    text: `Cégünk több évtizedes szakmai tapasztalattal rendelkezik a
+    tetőépítés és felújítás területén. Elkötelezettek vagyunk az
+    innováció és a hagyományok ötvözése mellett.`,
+    title: 'Történelmünk',
+  },
+  {
+    text: ` Célunk, hogy biztosítsuk ügyfeleink számára a legmagasabb minőségű
+    szolgáltatást, miközben fenntartható megoldásokat kínálunk a tetők
+    építésére és karbantartására.`,
+    title: 'Küldetésünk',
+  },
+  {
+    text: `Szakértelem, megbízhatóság és ügyfélközpontúság jellemzi
+    munkánkat. Büszkék vagyunk arra, hogy ügyfeleink bizalmát hosszú
+    távon élvezzük.`,
+    title: 'Értékeink',
+  },
+];
+
 export const Company: CompanyInfo = {
   companyName: 'Generálkivitelezés.hu',
   phone: '+36 30 123 4567',
@@ -101,4 +123,5 @@ export const Company: CompanyInfo = {
   testimonials,
   services,
   servicesExplained,
+  aboutUs,
 };

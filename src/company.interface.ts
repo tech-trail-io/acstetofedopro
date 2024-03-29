@@ -1,3 +1,4 @@
+
 export interface SocialMedia {
   title: string;
   link: string;
@@ -21,6 +22,10 @@ export interface ServiceExplain {
   text: string;
   moreInfo: string;
 }
+export interface AboutUsItem {
+  title: string;
+  text: string;
+}
 
 export interface CompanyInfo {
   companyName: string;
@@ -32,4 +37,5 @@ export interface CompanyInfo {
   testimonials: Testimonial[];
   services: Service[];
   servicesExplained: ServiceExplain[];
+  aboutUs: AboutUsItem[];
 }

@@ -6,7 +6,7 @@ import ServicesExplained from '../shared/main/ServicesExplained';
 import Testimonials from '../shared/main/Testimonials';
 import Contact from '../shared/main/Contact';
 import References from '../shared/main/References';
-import CompanyInfo from '../shared/main/CompanyInfo';
+import CompanyInfo from '../shared/main/AboutUs';
 import Footer from '../shared/footer/Footer';
 import { Company } from './company';
 import { Carousel, CarouselSlide } from '../shared/carousel/Carousel';
@@ -22,6 +22,7 @@ function App() {
     testimonials,
     services,
     servicesExplained,
+    aboutUs,
   } = Company;
 
   return (
@@ -36,7 +37,7 @@ function App() {
         <Testimonials testimonials={testimonials}></Testimonials>
         <Contact></Contact>
         <References></References>
-        <CompanyInfo></CompanyInfo>
+        <CompanyInfo aboutUs={aboutUs}></CompanyInfo>
       </main>
 
       <Footer
