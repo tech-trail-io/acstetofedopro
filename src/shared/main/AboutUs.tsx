@@ -10,10 +10,15 @@ function AboutUs({ aboutUs }: { aboutUs: AboutUsItem[] }) {
             Ismerje meg jobban vállalatunkat, történetünket és amit képviselünk.
           </p>
         </div>
-        <div className="md:flex md:justify-around text-center md:text-left">
-          {aboutUs.map(({ title, text }) => (
-            <div className="md:w-1/3 mb-8 md:mb-0">
-              <h3 className="text-xl font-semibold mb-3">{title}</h3>
+        <div className={`grid grid-cols-1 md:grid-cols-${aboutUs.length} gap-6`}>
+          {aboutUs.map(({ title, text, icon }) => (
+            <div
+              key="title"
+              className="bg-white rounded-lg shadow p-4 text-center"
+            >
+              <img className="w-16 h-16 mx-auto mb-3" src={icon} alt={title} />
+
+              <h3 className="text-lg font-semibold mb-2">{title}</h3>
               <p className="text-gray-600">{text}</p>
             </div>
           ))}

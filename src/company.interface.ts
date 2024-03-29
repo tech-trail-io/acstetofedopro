@@ -1,4 +1,3 @@
-
 export interface SocialMedia {
   title: string;
   link: string;
@@ -25,6 +24,7 @@ export interface ServiceExplain {
 export interface AboutUsItem {
   title: string;
   text: string;
+  icon: string;
 }
 
 export interface CompanyInfo {

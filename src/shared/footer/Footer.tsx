@@ -16,14 +16,14 @@ function Footer({
         </div>
         <div>
           {socialMedia?.map(({ link, title }) => (
-            <a key={link} href={link} className="text-white hover:text-gray-900">
+            <a key={link} href={link} className="text-white p-4 hover:text-gray-900">
               {title}
             </a>
           ))}
         </div>
       </div>
       <div className="text-center mt-4">
-        <p>&copy; {companyName} 2024. Minden jog fenntartva.</p>
+        <p>&copy; {companyName} {new Date().getFullYear()}. Minden jog fenntartva.</p>
       </div>
     </footer>
   );

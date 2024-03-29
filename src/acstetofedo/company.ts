@@ -111,18 +111,21 @@ const aboutUs: AboutUsItem[] = [
     tetőépítés és felújítás területén. Elkötelezettek vagyunk az
     innováció és a hagyományok ötvözése mellett.`,
     title: 'Történelmünk',
+    icon: 'assets/services/general-execution-icon.png',
   },
   {
     text: ` Célunk, hogy biztosítsuk ügyfeleink számára a legmagasabb minőségű
     szolgáltatást, miközben fenntartható megoldásokat kínálunk a tetők
     építésére és karbantartására.`,
     title: 'Küldetésünk',
+    icon: 'assets/services/general-execution-icon.png',
   },
   {
     text: `Szakértelem, megbízhatóság és ügyfélközpontúság jellemzi
     munkánkat. Büszkék vagyunk arra, hogy ügyfeleink bizalmát hosszú
     távon élvezzük.`,
     title: 'Értékeink',
+    icon: 'assets/services/general-execution-icon.png',
   },
 ];
 
