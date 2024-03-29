@@ -1,16 +1,16 @@
-import './index.css';
-import Header from './header/Header';
-import Jumbotron from './main/Jumbotron';
-import Services from './main/Services';
-import ServicesExplained from './main/ServicesExplained';
-import Testimonials from './main/Testimonials';
-import Contact from './main/Contact';
-import References from './main/References';
-import CompanyInfo from './main/CompanyInfo';
-import Footer from './footer/Footer';
+import '../index.css';
+import Header from '../shared/header/Header';
+import Jumbotron from '../shared/main/Jumbotron';
+import Services from '../shared/main/Services';
+import ServicesExplained from '../shared/main/ServicesExplained';
+import Testimonials from '../shared/main/Testimonials';
+import Contact from '../shared/main/Contact';
+import References from '../shared/main/References';
+import CompanyInfo from '../shared/main/CompanyInfo';
+import Footer from '../shared/footer/Footer';
 import { Company } from './company';
-import { Carousel, CarouselSlide } from './carousel/Carousel';
-import { Gallery } from './gallery/Gallery';
+import { Carousel, CarouselSlide } from '../shared/carousel/Carousel';
+import { Gallery } from '../shared/gallery/Gallery';
 
 function App() {
   const { companyName, phone, email, logo, socialMedia, title, testimonials } =

@@ -5,10 +5,12 @@
   "author": "TechTrail.io",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "webpack serve --open",
-    "prebuild": "rimraf dist",
-    "build": "NODE_ENV=production webpack",
-    "build:dev": "webpack"
+    "acstetofedo:start": "webpack serve --open --env project=acstetofedo --env port=8000",
+    "acstetofedo:build": "NODE_ENV=production webpack --env project=acstetofedo",
+    "acstetofedo:build:dev": "webpack --env project=acstetofedo",
+    "generalkivitelezes:start": "webpack serve --open --env project=generalkivitelezes --env port=8001",
+    "generalkivitelezes:build": "NODE_ENV=production webpack --env project=generalkivitelezes",
+    "generalkivitelezes:build:dev": "webpack --env project=generalkivitelezes"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
@@ -23,7 +25,6 @@
     "postcss": "^8.4.30",
     "postcss-loader": "^7.3.3",
     "postcss-preset-env": "^9.1.4",
-    "rimraf": "^5.0.5",
     "sitemap-webpack-plugin": "^1.1.1",
     "style-loader": "^3.3.3",
     "swiper": "^11.1.0",

@@ -16,12 +16,13 @@ const paths = [
 const isDev = process.env.NODE_ENV !== 'production';
 
 /** @type {import('webpack').Configuration}*/
-module.exports = {
+module.exports = ({ project, port }) => ({
   mode: isDev ? 'development' : 'production',
-  entry: './src/index.tsx',
+  entry: `./src/${project}/index.tsx`,
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, `dist/${project}`),
     filename: 'bundle.[contenthash].js',
+    clean: true,
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -48,12 +49,12 @@ module.exports = {
   },
   devServer: {
     static: 'dist',
-    port: 8000,
+    port: port || 8000,
     allowedHosts: 'all',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: `./src/${project}/index.html`,
       publicPath: './',
       minify: isDev
         ? false
@@ -74,8 +75,8 @@ module.exports = {
         { from: './src/assets', to: './assets/' },
       ],
     }),
-    new SitemapPlugin({ base: 'https://acstetofedo.hu/', paths }),
+    new SitemapPlugin({ base: `https://${project}.hu/`, paths }),
     new CssMinimizerPlugin(),
     new webpack.ProgressPlugin(),
   ],
-};
+});

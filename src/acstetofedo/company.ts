@@ -1,4 +1,4 @@
-import { CompanyInfo, Testimonial } from './company.interface';
+import { CompanyInfo, Testimonial } from '../company.interface';
 
 export const testimonials: Testimonial[] = [
   {

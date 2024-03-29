@@ -1,4 +1,4 @@
-import { CompanyInfo } from '../company.interface';
+import { CompanyInfo } from '../../company.interface';
 
 function Footer({
   companyName,

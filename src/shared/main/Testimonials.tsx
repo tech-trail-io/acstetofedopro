@@ -1,4 +1,4 @@
-import { Testimonial } from "../company.interface";
+import { Testimonial } from "../../company.interface";
 
 function Testimonials({ testimonials }: { testimonials: Testimonial[] } ) {
   return (
