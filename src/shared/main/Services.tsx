@@ -9,7 +9,7 @@ function Services({ services }: { services: Service[] }) {
         </h2>
         <div className={`grid grid-cols-1 md:grid-cols-${services.length} gap-6`}>
           {services.map(({ icon, title, text }) => (
-            <div key="title" className="bg-white rounded-lg shadow p-4 text-center">
+            <div key={title} className="bg-white rounded-lg shadow p-4 text-center">
               <img
                 className="w-16 h-16 mx-auto mb-3"
                 src={icon}

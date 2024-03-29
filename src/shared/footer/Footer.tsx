@@ -16,7 +16,7 @@ function Footer({
         </div>
         <div>
           {socialMedia?.map(({ link, title }) => (
-            <a key={link} href={link} className="text-white p-4 hover:text-gray-900">
+            <a key={title} href={link} className="text-white hover:text-gray-900">
               {title}
             </a>
           ))}

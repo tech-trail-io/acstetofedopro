@@ -9,7 +9,6 @@ import References from '../shared/main/References';
 import CompanyInfo from '../shared/main/AboutUs';
 import Footer from '../shared/footer/Footer';
 import { Company } from './company';
-import { Carousel, CarouselSlide } from '../shared/carousel/Carousel';
 import { Gallery } from '../shared/gallery/Gallery';
 
 function App() {
@@ -35,24 +34,11 @@ function App() {
         <ServicesExplained
           servicesExplained={servicesExplained}
         ></ServicesExplained>
-        <Testimonials testimonials={testimonials}></Testimonials>
-        <Contact></Contact>
-        <References></References>
         <CompanyInfo aboutUs={aboutUs}></CompanyInfo>
-        <Carousel
-          slidesPerView={1}
-          breakpoints={{ 768: { slidesPerView: 4 } }}
-          on={{
-            slideChange: () => console.log('slide changed'),
-            progress: (s: any, progress: any) =>
-              console.log(`progress is ${progress}`),
-          }}
-        >
-          <CarouselSlide>Slide 1</CarouselSlide>
-          <CarouselSlide>Slide 2</CarouselSlide>
-          <CarouselSlide>Slide 3</CarouselSlide>
-        </Carousel>
-        <Gallery
+        <Testimonials testimonials={testimonials}></Testimonials>
+        <References></References>
+        <Contact></Contact>
+        {/* <Gallery
           galleryID="project-gallery"
           images={[
             {
@@ -80,7 +66,7 @@ function App() {
               height: 1666,
             },
           ]}
-        ></Gallery>
+        ></Gallery> */}
       </main>
 
       <Footer
