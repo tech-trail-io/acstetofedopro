@@ -1,4 +1,9 @@
-import { CompanyInfo, Testimonial } from '../company.interface';
+import {
+  CompanyInfo,
+  Service,
+  ServiceExplain,
+  Testimonial,
+} from '../company.interface';
 
 export const testimonials: Testimonial[] = [
   {
@@ -24,6 +29,64 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+const services: Service[] = [
+  {
+    icon: 'assets/services/roof-construction-icon.png',
+    title: 'Tetők',
+    text: 'Minőségi tetőfedés és javítás, modern és hagyományos anyagokkal egyaránt.',
+  },
+  {
+    icon: 'assets/services/renovation-icon.png',
+    title: 'Felújítás',
+    text: 'Teljes körű felújítási munkálatok, a tervezéstől a kivitelezésig.',
+  },
+  {
+    icon: 'assets/services/general-execution-icon.png',
+    title: 'Generálkivitelezés',
+    text: 'A projekt kezdetétől a kulcsrakész átadásig, minden építési szakaszban.',
+  },
+  {
+    icon: 'assets/services/hangar-construction-icon.png',
+    title: 'Csarnoképítés',
+    text: 'Ipari és mezőgazdasági csarnokok tervezése és építése, magas szakmai színvonalon.',
+  },
+];
+
+const servicesExplained: ServiceExplain[] = [
+  {
+    image: 'assets/services/roof-construction.jpg',
+    title: 'Tetők',
+    text: `Minőségi tetőfedés és javítás, modern és hagyományos anyagokkal
+  egyaránt. Gondoskodunk arról, hogy otthona vagy vállalkozása
+  tetője időjárás álló és esztétikus legyen.`,
+    moreInfo: 'More info',
+  },
+  {
+    image: 'assets/services/renovation.jpg',
+    title: 'Felújítás',
+    text: ` Teljes körű felújítási munkálatok, a tervezéstől a kivitelezésig.
+    Profi csapatunk garantálja, hogy ingatlana megújuljon és értéke
+    növekedjen.`,
+    moreInfo: 'More info',
+  },
+  {
+    image: 'assets/services/general-execution.jpeg',
+    title: 'Generálkivitelezés',
+    text: `A projekt kezdetétől a kulcsrakész átadásig, minden építési
+    szakaszban. Szakértelmünkkel és tapasztalatunkkal biztosítjuk
+    projektje sikerét.`,
+    moreInfo: 'More info',
+  },
+  {
+    image: 'assets/services/hangar-construction.png',
+    title: 'Csarnoképítés',
+    text: ` Ipari és mezőgazdasági csarnokok tervezése és építése, magas
+    szakmai színvonalon. Megbízható kivitelezés, tervezéstől a
+    megvalósulásig.`,
+    moreInfo: 'More info',
+  },
+];
+
 export const Company: CompanyInfo = {
   companyName: 'Generálkivitelezés.hu',
   phone: '+36 30 123 4567',
@@ -36,4 +99,6 @@ export const Company: CompanyInfo = {
   ],
   title: 'Gyors és Megbízható Generálkivizetlezés Veszprém megyében!',
   testimonials,
+  services,
+  servicesExplained,
 };

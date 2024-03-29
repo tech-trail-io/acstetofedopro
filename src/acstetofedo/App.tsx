@@ -13,16 +13,27 @@ import { Carousel, CarouselSlide } from '../shared/carousel/Carousel';
 import { Gallery } from '../shared/gallery/Gallery';
 
 function App() {
-  const { companyName, phone, email, logo, socialMedia, title, testimonials } =
-    Company;
+  const {
+    companyName,
+    phone,
+    email,
+    logo,
+    socialMedia,
+    title,
+    testimonials,
+    services,
+    servicesExplained,
+  } = Company;
 
   return (
     <>
       <Header companyName={companyName} logo={logo}></Header>
       <main>
         <Jumbotron title={title}></Jumbotron>
-        <Services></Services>
-        <ServicesExplained></ServicesExplained>
+        <Services services={services}></Services>
+        <ServicesExplained
+          servicesExplained={servicesExplained}
+        ></ServicesExplained>
         <Testimonials testimonials={testimonials}></Testimonials>
         <Contact></Contact>
         <References></References>

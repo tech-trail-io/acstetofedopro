@@ -9,6 +9,18 @@ export interface Testimonial {
   rate: number;
   review: string;
 }
+export interface Service {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+export interface ServiceExplain {
+  image: string;
+  title: string;
+  text: string;
+  moreInfo: string;
+}
 
 export interface CompanyInfo {
   companyName: string;
@@ -18,4 +30,6 @@ export interface CompanyInfo {
   socialMedia: SocialMedia[];
   title: string;
   testimonials: Testimonial[];
+  services: Service[];
+  servicesExplained: ServiceExplain[];
 }

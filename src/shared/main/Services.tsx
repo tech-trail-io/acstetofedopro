@@ -1,26 +1,6 @@
-function Services() {
-  const services = [
-    {
-      icon: 'assets/services/roof-construction-icon.png',
-      title: 'Tetők',
-      text: 'Minőségi tetőfedés és javítás, modern és hagyományos anyagokkal egyaránt.',
-    },
-    {
-      icon: 'assets/services/renovation-icon.png',
-      title: 'Felújítás',
-      text: 'Teljes körű felújítási munkálatok, a tervezéstől a kivitelezésig.',
-    },
-    {
-      icon: 'assets/services/general-execution-icon.png',
-      title: 'Generálkivitelezés',
-      text: 'A projekt kezdetétől a kulcsrakész átadásig, minden építési szakaszban.',
-    },
-    {
-      icon: 'assets/services/hangar-construction-icon.png',
-      title: 'Csarnoképítés',
-      text: 'Ipari és mezőgazdasági csarnokok tervezése és építése, magas szakmai színvonalon.',
-    },
-  ];
+import { Service } from "../../company.interface";
+
+function Services({ services }: { services: Service[] }) {
   return (
     <section id="services" className="bg-gray-100 py-8">
       <div className="max-w-6xl mx-auto px-4">
