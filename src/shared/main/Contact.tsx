@@ -1,6 +1,9 @@
 function Contact() {
   return (
     <section id="contact" className="my-10">
+        <h2 className="text-center text-3xl font-semibold mb-6">
+          Kérje ajánlatunkat
+        </h2>
       <form action="#" method="post" className="max-w-xl mx-auto">
         <div className="mb-4">
           <label

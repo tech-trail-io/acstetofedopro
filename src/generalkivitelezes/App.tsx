@@ -9,7 +9,6 @@ import References from '../shared/main/References';
 import CompanyInfo from '../shared/main/AboutUs';
 import Footer from '../shared/footer/Footer';
 import { Company } from './company';
-import { Carousel, CarouselSlide } from '../shared/carousel/Carousel';
 
 function App() {
   const {

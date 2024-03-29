@@ -1,10 +1,9 @@
 import { useEffect, useRef } from 'react';
 import { register } from 'swiper/element/bundle';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export function Carousel(props: any) {
   const swiperRef: any = useRef(null);
-  const { children, ...rest } = props;
+  const { children, onInit, ...rest } = props;
 
   useEffect(() => {
     register();
@@ -13,24 +12,11 @@ export function Carousel(props: any) {
     };
     Object.assign(swiperRef.current, params);
     swiperRef.current.initialize();
+    onInit?.(swiperRef);
   }, []);
 
   return (
-    <swiper-container
-      spaceBetween={30}
-      centeredSlides={true}
-      autoplay={{
-        delay: 2,
-        disableOnInteraction: false,
-      }}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      init={true}
-      ref={swiperRef}
-    >
+    <swiper-container init="false" ref={swiperRef}>
       {children}
     </swiper-container>
   );
