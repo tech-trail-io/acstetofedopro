@@ -2,14 +2,14 @@ import { ServiceExplain } from '../../company.interface';
 
 function ServicesExplained({
   servicesExplained,
-}: {
+}: Readonly<{
   servicesExplained: ServiceExplain[];
-}) {
+}>) {
   return (
     <section className="py-8">
       <div className="max-w-5xl mx-auto px-4">
         {servicesExplained.map(({ image, title, text, moreInfo }, index) => (
-          <div className={`flex flex-wrap items-center mb-8`}>
+          <div key={title} className={`flex flex-wrap items-center mb-8`}>
             {index % 2 === 0 ? (
               <>
                 <div className="md:w-1/2">

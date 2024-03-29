@@ -12,7 +12,7 @@ export function Carousel(props: any) {
     };
     Object.assign(swiperRef.current, params);
     swiperRef.current.initialize();
-    onInit?.(swiperRef);
+    onInit?.(swiperRef.current);
   }, []);
 
   return (
