@@ -20,6 +20,7 @@
 !src/assets/**/*.jpg
 !src/assets/**/*.avif
 !src/assets/**/*.svg
+!src/robots.txt
 
 # configurations
 !.prettierrc
