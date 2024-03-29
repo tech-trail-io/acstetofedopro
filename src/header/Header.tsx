@@ -1,4 +1,6 @@
-function Header({ companyName, logo }: { companyName: string; logo: string; }) {
+import { CompanyInfo } from "../company.interface";
+
+function Header({ companyName, logo }: Readonly<Partial<CompanyInfo>>) {
     const menu = [
         { link: '#about', title: 'Rólunk' },
         { link: '#services', title: 'Szolgáltatások' },

@@ -8,12 +8,14 @@ import Contact from './main/Contact';
 import References from './main/References';
 import CompanyInfo from './main/CompanyInfo';
 import Footer from './footer/Footer';
+import { Company } from './company';
 
-function App() {  
+function App() {
+  const { companyName, phone, email, logo, socialMedia } = Company;
 
   return (
     <>
-    <Header companyName="Ácstetőfedő.hu" logo="assets/logo.png"></Header>
+    <Header companyName={companyName} logo={logo}></Header>
     <main>
       <Jumbotron></Jumbotron>
       <Services></Services>
@@ -24,7 +26,7 @@ function App() {
       <CompanyInfo></CompanyInfo>
     </main>
 
-    <Footer></Footer>
+    <Footer companyName={companyName} phone={phone} email={email} socialMedia={socialMedia}></Footer>
     </>
   );
 }

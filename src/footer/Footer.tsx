@@ -1,26 +1,29 @@
-function Footer() {
+import { CompanyInfo } from '../company.interface';
+
+function Footer({
+  companyName,
+  phone,
+  email,
+  socialMedia,
+}: Readonly<Partial<CompanyInfo>>) {
   return (
     <footer className="bg-primary text-white p-5">
       <div className="flex justify-between items-center">
         <div>
-          <p>Cég Neve</p>
-          <p>+36 30 123 4567</p>
-          <p>info@cegneve.hu</p>
+          <p>{companyName}</p>
+          <p>{phone}</p>
+          <p>{email}</p>
         </div>
         <div>
-          <a href="#" className="text-white hover:text-gray-900">
-            Facebook
-          </a>
-          <a href="#" className="text-white hover:text-gray-900 ml-4">
-            Instagram
-          </a>
-          <a href="#" className="text-white hover:text-gray-900 ml-4">
-            LinkedIn
-          </a>
+          {socialMedia?.map(({ link, title }) => (
+            <a key={link} href={link} className="text-white hover:text-gray-900">
+              {title}
+            </a>
+          ))}
         </div>
       </div>
       <div className="text-center mt-4">
-        <p>&copy; Cég Neve 2024. Minden jog fenntartva.</p>
+        <p>&copy; {companyName} 2024. Minden jog fenntartva.</p>
       </div>
     </footer>
   );
