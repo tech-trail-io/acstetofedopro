@@ -5,6 +5,7 @@
   "author": "TechTrail.io",
   "license": "UNLICENSED",
   "scripts": {
+    "build": "npm run acstetofedo:build && npm run generalkivitelezes:build",
     "acstetofedo:start": "webpack serve --open --env project=acstetofedo --env port=8000",
     "acstetofedo:build": "NODE_ENV=production webpack --env project=acstetofedo",
     "acstetofedo:build:dev": "webpack --env project=acstetofedo",
