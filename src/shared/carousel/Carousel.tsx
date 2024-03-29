@@ -1,29 +1,36 @@
 import { useEffect, useRef } from 'react';
-import Swiper from 'swiper';
 import { register } from 'swiper/element/bundle';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export function Carousel(props: any) {
   const swiperRef: any = useRef(null);
   const { children, ...rest } = props;
 
   useEffect(() => {
-    // Register Swiper web component
     register();
-
-    // pass component props to parameters
     const params = {
       ...rest,
     };
-
-    // Assign it to swiper element
     Object.assign(swiperRef.current, params);
-
-    // initialize swiper
     swiperRef.current.initialize();
   }, []);
 
   return (
-    <swiper-container init="false" ref={swiperRef}>
+    <swiper-container
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 2,
+        disableOnInteraction: false,
+      }}
+      pagination={{
+        clickable: true,
+      }}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      init={true}
+      ref={swiperRef}
+    >
       {children}
     </swiper-container>
   );
@@ -32,5 +39,9 @@ export function Carousel(props: any) {
 export function CarouselSlide(props: any) {
   const { children, ...rest } = props;
 
-  return <swiper-slide {...rest}>{children}</swiper-slide>;
+  return (
+    <swiper-slide key={Date.now} {...rest}>
+      {children}
+    </swiper-slide>
+  );
 }

@@ -48,11 +48,29 @@ function App() {
               console.log(`progress is ${progress}`),
           }}
         >
-          <CarouselSlide>Slide 1</CarouselSlide>
-          <CarouselSlide>Slide 2</CarouselSlide>
-          <CarouselSlide>Slide 3</CarouselSlide>
+          <CarouselSlide>
+            <img
+              className="w-16 h-16 mx-auto mb-3"
+              src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+              alt="asd"
+            />
+          </CarouselSlide>
+          <CarouselSlide>
+            <img
+              className="w-16 h-16 mx-auto mb-3"
+              src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+              alt="asd"
+            />
+          </CarouselSlide>
+          <CarouselSlide>
+            <img
+              className="w-16 h-16 mx-auto mb-3"
+              src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/1/img-2500.jpg"
+              alt="asd"
+            />
+          </CarouselSlide>
         </Carousel>
-        <Gallery
+        {/* <Gallery
           galleryID="project-gallery"
           images={[
             {
@@ -80,15 +98,15 @@ function App() {
               height: 1666,
             },
           ]}
-        ></Gallery>
+        ></Gallery> */}
       </main>
 
-      <Footer
+      {/* <Footer
         companyName={companyName}
         phone={phone}
         email={email}
         socialMedia={socialMedia}
-      ></Footer>
+      ></Footer> */}
     </>
   );
 }
