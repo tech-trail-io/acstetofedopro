@@ -33,10 +33,10 @@ function App() {
         <ServicesExplained
           servicesExplained={servicesExplained}
         ></ServicesExplained>
-        <Testimonials testimonials={testimonials}></Testimonials>
-        <Contact></Contact>
-        <References></References>
         <CompanyInfo aboutUs={aboutUs}></CompanyInfo>
+        <Testimonials testimonials={testimonials}></Testimonials>
+        <References></References>
+        <Contact></Contact>
       </main>
 
       <Footer

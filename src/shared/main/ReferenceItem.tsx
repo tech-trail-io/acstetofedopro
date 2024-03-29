@@ -29,7 +29,7 @@ function ReferenceItem() {
     <>
       {swiper ? (
         <Carousel
-          className="swiper"
+          className="swiper gallery"
           spaceBetween={10}
           navigation={true}
           thumbs={{
@@ -43,7 +43,12 @@ function ReferenceItem() {
         >
           {images.map(({ src, caption }, index) => (
             <CarouselSlide className="swiper-slide" key={index}>
-              <img src={src} />
+              <a
+                href={src}
+                target="_blank"
+              >
+                <img src={src} />
+              </a>
               <div style={{ backgroundColor: 'black', color: 'white' }}>
                 {caption}
               </div>

@@ -2,12 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .jumbotron {
   width: auto;
   height: auto;
   min-height: 100vh;
-  background-image: url("./assets/big-jumbotron-non-ai.png");
+  background-image: url('./assets/big-jumbotron-non-ai.png');
   background-size: cover;
   background-position: center;
   display: flex;
