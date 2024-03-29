@@ -10,20 +10,20 @@ const companyName = 'Ácstetőfedő.hu';
 export const testimonials: Testimonial[] = [
   {
     name: 'Gábor',
-    picture: '/assets/reviews/review-1.webp',
+    picture: 'assets/reviews/review-1.webp',
     rate: 4.5,
     review: `Az ${companyName} csapata rendkívül profi és tapasztalt, munkájuk precíz és megbízható. Minden lépést gondosan végrehajtottak, és a végeredmény egyszerűen lenyűgöző volt. Bátran ajánlom őket minden tetőfedési feladathoz.`,
   },
   {
     name: 'Erika',
-    picture: '/assets/reviews/review-2.webp',
+    picture: 'assets/reviews/review-2.webp',
     rate: 4.5,
     review:
       'A tetőm újra tökéletes állapotban van, köszönöm a gyors és hatékony munkát.',
   },
   {
     name: 'Dávid',
-    picture: '/assets/reviews/review-3.webp',
+    picture: 'assets/reviews/review-3.webp',
     rate: 5,
     review: `Nagyon elégedettek vagyunk a ${companyName}-val, mert nemcsak hogy gyorsan reagáltak a kérésünkre, de a munkájuk minősége is kiemelkedő volt. Rugalmasak voltak az időpontokat illetően, és a csapat teljes szívvel a munkájába fektette magát, hogy a tetőnk újra tökéletes állapotba kerüljön.`,
   },
