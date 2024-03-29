@@ -6,6 +6,7 @@ export interface SocialMedia {
 export interface Testimonial {
   name: string;
   picture: string;
+  rate: number;
   review: string;
 }
 

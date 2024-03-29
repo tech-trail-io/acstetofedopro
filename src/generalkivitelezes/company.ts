@@ -3,19 +3,22 @@ import { CompanyInfo, Testimonial } from '../company.interface';
 export const testimonials: Testimonial[] = [
   {
     name: 'János',
-    picture: '/path/to/profile-1.jpg',
+    picture: '/assets/reviews/review-1.webp',
+    rate: 4.5,
     review:
       'Nagyon elégedett vagyok a szolgáltatással, a munka gyors és szakszerű volt. Mindenkinek ajánlom!',
   },
   {
     name: 'Erika',
-    picture: '/path/to/profile-2.jpg',
+    picture: '/assets/reviews/review-2.webp',
+    rate: 4.5,
     review:
       'A tetőm újra tökéletes állapotban van, köszönöm a gyors és hatékony munkát.',
   },
   {
     name: 'Péter',
-    picture: '/path/to/profile-3.jpg',
+    picture: '/assets/reviews/review-3.webp',
+    rate: 5,
     review:
       'Megbízható csapat, kiváló anyagokkal dolgoznak. A végeredmény minden várakozásomat felülmúlta.!',
   },
