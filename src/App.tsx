@@ -9,6 +9,7 @@ import References from './main/References';
 import CompanyInfo from './main/CompanyInfo';
 import Footer from './footer/Footer';
 import { Company } from './company';
+import { Carousel, CarouselSlide } from './carousel/Carousel';
 
 function App() {
   const { companyName, phone, email, logo, socialMedia } = Company;
