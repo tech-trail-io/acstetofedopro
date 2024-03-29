@@ -1,5 +1,4 @@
 import { AboutUsItem } from '../company.interface';
-import AboutUs from '../shared/main/AboutUs';
 import {
   CompanyInfo,
   Service,
@@ -7,13 +6,13 @@ import {
   Testimonial,
 } from '../company.interface';
 
+const companyName = 'Ácstetőfedő.hu';
 export const testimonials: Testimonial[] = [
   {
-    name: 'János',
+    name: 'Gábor',
     picture: '/assets/reviews/review-1.webp',
     rate: 4.5,
-    review:
-      'Nagyon elégedett vagyok a szolgáltatással, a munka gyors és szakszerű volt. Mindenkinek ajánlom!',
+    review: `Az ${companyName} csapata rendkívül profi és tapasztalt, munkájuk precíz és megbízható. Minden lépést gondosan végrehajtottak, és a végeredmény egyszerűen lenyűgöző volt. Bátran ajánlom őket minden tetőfedési feladathoz.`,
   },
   {
     name: 'Erika',
@@ -23,84 +22,52 @@ export const testimonials: Testimonial[] = [
       'A tetőm újra tökéletes állapotban van, köszönöm a gyors és hatékony munkát.',
   },
   {
-    name: 'Péter',
+    name: 'Dávid',
     picture: '/assets/reviews/review-3.webp',
     rate: 5,
     review:
-      'Megbízható csapat, kiváló anyagokkal dolgoznak. A végeredmény minden várakozásomat felülmúlta.!',
+      `Nagyon elégedettek vagyunk a ${companyName}-val, mert nemcsak hogy gyorsan reagáltak a kérésünkre, de a munkájuk minősége is kiemelkedő volt. Rugalmasak voltak az időpontokat illetően, és a csapat teljes szívvel a munkájába fektette magát, hogy a tetőnk újra tökéletes állapotba kerüljön.`,
   },
 ];
 
 const services: Service[] = [
   {
     icon: 'assets/services/roof-construction-icon.png',
-    title: 'Tetők',
-    text: 'Minőségi tetőfedés és javítás, modern és hagyományos anyagokkal egyaránt.',
+    title: 'Új tetők készítése',
+    text: 'Kínálunk bármilyen típusú tetőszerkezetek készítését és fedését, legyen szó új építésű ingatlanokról vagy meglévő struktúrák bővítéséről.',
   },
   {
     icon: 'assets/services/renovation-icon.png',
-    title: 'Felújítás',
-    text: 'Teljes körű felújítási munkálatok, a tervezéstől a kivitelezésig.',
+    title: 'Régi tetők felújítása',
+    text: 'Specializálódunk felújításra váró tetők javítására, megerősítésére és esetleges cseréjére, hogy hosszú távon is biztonságosak és esztétikusak maradjanak.',
   },
   {
-    icon: 'assets/services/general-execution-icon.png',
-    title: 'Generálkivitelezés',
-    text: 'A projekt kezdetétől a kulcsrakész átadásig, minden építési szakaszban.',
+    icon: 'assets/services/car-garage.png',
+    title: 'Féltetők és kocsibeállók építése',
+    text: 'Egyedi tervezésű féltetők és kocsibeállók építését vállaljuk, gyalult fa kivitelben, hogy tökéletesen illeszkedjenek otthona stílusához.',
   },
   {
-    icon: 'assets/services/hangar-construction-icon.png',
-    title: 'Csarnoképítés',
-    text: 'Ipari és mezőgazdasági csarnokok tervezése és építése, magas szakmai színvonalon.',
+    icon: 'assets/services/roof-gutter.png',
+    title: 'Bádogozási munkák',
+    text: 'Teljes körű bádogozási szolgáltatásokat nyújtunk, beleértve a komplett lemezfedéseket, ereszcsatornák, szegélyezések és élhajlítások készítését.',
   },
 ];
 
 const servicesExplained: ServiceExplain[] = [
   {
     image: 'assets/services/roof-construction.jpg',
-    title: 'Tetők',
+    title: 'Új tetők építése',
     text: `Minőségi tetőfedés és javítás, modern és hagyományos anyagokkal
   egyaránt. Gondoskodunk arról, hogy otthona vagy vállalkozása
   tetője időjárás álló és esztétikus legyen.`,
     moreInfo: 'More info',
   },
   {
-    image: 'assets/services/renovation.jpg',
-    title: 'Felújítás',
+    image: 'assets/services/roof-renovation.webp',
+    title: 'Régi tetők felújítása javítása',
     text: ` Teljes körű felújítási munkálatok, a tervezéstől a kivitelezésig.
     Profi csapatunk garantálja, hogy ingatlana megújuljon és értéke
     növekedjen.`,
-    moreInfo: 'More info',
-  },
-  {
-    image: 'assets/services/general-execution.jpeg',
-    title: 'Generálkivitelezés',
-    text: `A projekt kezdetétől a kulcsrakész átadásig, minden építési
-    szakaszban. Szakértelmünkkel és tapasztalatunkkal biztosítjuk
-    projektje sikerét.`,
-    moreInfo: 'More info',
-  },
-  {
-    image: 'assets/services/hangar-construction.png',
-    title: 'Csarnoképítés',
-    text: ` Ipari és mezőgazdasági csarnokok tervezése és építése, magas
-    szakmai színvonalon. Megbízható kivitelezés, tervezéstől a
-    megvalósulásig.`,
-    moreInfo: 'More info',
-  },
-  {
-    image: 'assets/services/hangar-construction.png',
-    title: 'Csarnoképítés',
-    text: ` Ipari és mezőgazdasági csarnokok tervezése és építése, magas
-    szakmai színvonalon. Megbízható kivitelezés, tervezéstől a
-    megvalósulásig.`,
-    moreInfo: 'More info',
-  },
-  {
-    image: 'assets/services/hangar-construction.png',
-    title: 'Csarnoképítés',
-    text: ` Ipari és mezőgazdasági csarnokok tervezése és építése, magas
-    szakmai színvonalon. Megbízható kivitelezés, tervezéstől a
-    megvalósulásig.`,
     moreInfo: 'More info',
   },
 ];
@@ -130,7 +97,7 @@ const aboutUs: AboutUsItem[] = [
 ];
 
 export const Company: CompanyInfo = {
-  companyName: 'Ácstetőfedő.hu',
+  companyName: companyName,
   phone: '+36 30 123 4567',
   email: 'info@acstetofedo.hu',
   logo: 'assets/logo.png',
