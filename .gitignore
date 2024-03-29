@@ -1,0 +1,35 @@
+*
+
+# tooling
+!.github
+!.github/**/
+!.github/**/*.yaml
+!.vscode
+!.vscode/extensions.json
+
+# source
+!src
+!src/**/
+!src/**/*.ts
+!src/**/*.tsx
+!src/**/*.css
+!src/**/*.html
+!src/**/*.json
+!src/assets/**
+!src/assets/**/*.png
+!src/assets/**/*.jpg
+!src/assets/**/*.avif
+!src/assets/**/*.svg
+!src/robots.txt
+
+# configurations
+!.prettierrc
+!.gitignore
+!package*.json
+!postcss.config.js
+!tailwind.config.js
+!tsconfig.json
+!webpack.config.js
+
+# documentation
+!README.md
