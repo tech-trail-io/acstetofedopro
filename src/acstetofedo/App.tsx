@@ -22,6 +22,8 @@ function App() {
     services,
     servicesExplained,
     aboutUs,
+    ourStory,
+    references,
   } = Company;
 
   return (
@@ -33,9 +35,9 @@ function App() {
         <ServicesExplained
           servicesExplained={servicesExplained}
         ></ServicesExplained>
-        <CompanyInfo aboutUs={aboutUs}></CompanyInfo>
+        <CompanyInfo aboutUs={aboutUs} ourStory={ourStory}></CompanyInfo>
         <Testimonials testimonials={testimonials}></Testimonials>
-        <References></References>
+        <References references={references}></References>
         <Contact></Contact>
       </main>
 

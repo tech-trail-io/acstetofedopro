@@ -27,6 +27,16 @@ export interface AboutUsItem {
   icon: string;
 }
 
+export interface ReferenceImage {
+  src: string;
+  caption: string;
+}
+
+export interface Reference {
+  description: string;
+  images: ReferenceImage[];
+}
+
 export interface CompanyInfo {
   companyName: string;
   phone: string;
@@ -38,4 +48,6 @@ export interface CompanyInfo {
   services: Service[];
   servicesExplained: ServiceExplain[];
   aboutUs: AboutUsItem[];
+  ourStory: string;
+  references: Reference[];
 }

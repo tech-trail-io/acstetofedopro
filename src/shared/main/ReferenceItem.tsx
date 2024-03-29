@@ -2,28 +2,10 @@ import './ReferenceItem.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Carousel, CarouselSlide } from '../carousel/Carousel';
 import { useState } from 'react';
+import { ReferenceImage } from '../../company.interface';
 
-function ReferenceItem() {
+function ReferenceItem({ images }: Readonly<{ images: ReferenceImage[] }>) {
   const [swiper, setSwiper] = useState();
-  console.log(swiper);
-  const images = [
-    {
-      src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-700.jpg',
-      caption: 'ez egy város',
-    },
-    {
-      src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-700.jpg',
-      caption: 'ez egy hegy',
-    },
-    {
-      src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-700.jpg',
-      caption: 'ez is egy hegy',
-    },
-    {
-      src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-700.jpg',
-      caption: 'meg ez is',
-    },
-  ];
 
   return (
     <>

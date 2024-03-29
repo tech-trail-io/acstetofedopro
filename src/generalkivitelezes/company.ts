@@ -1,6 +1,7 @@
 import {
   AboutUsItem,
   CompanyInfo,
+  Reference,
   Service,
   ServiceExplain,
   Testimonial,
@@ -112,6 +113,57 @@ const aboutUs: AboutUsItem[] = [
   },
 ];
 
+const ourStory = `1995-ben készítettem el első munkámat ács-tetőfedő vállalkozóként. Az azóta eltelt közel 30 év alatt az ország szinte minden pontján megfordultam és ott hagytam szakmai “lábnyomomat” kisebb-nagyobb beruházásokban a megrendelők elégedettségére. Az utóbbi években túlnyomórészt lakóhelyem 100 kilométeres körzetében dolgozom.
+Időközben családi vállalkozássá bővültünk, fiam kitanulta a bádogos szakmát. Ács-tetőfedő-bádogos  munkák kivitelezése semmilyen szinten nem okoz problémát, az egyszerűbb, kisebb megbízásoktól, a legbonyolultabb, több száz négyzetméteresig. 
+Árajánlatot mindig személyes megbeszélés, elkészült tervek alapján készítünk, részletesen, mindenre kiterjedően, ingyenesen.
+Elszámolás mindig az adott munkafolyamat elkészülte után történik, a megrendelő által elfogadott árajánlat alapján.
+Az elmúlt 30 év rengeteg referencia munkát eredményezett, melyeket olyan formában bocsátok az érdeklődők részére, hogy konkrét elkészült munkák címét és a megrendelők nevét, telefonszámát adom meg, ahol személyesen lehet informálódni az elkészített munkák minőségéről.`;
+
+const references: Reference[] = [
+  {
+    description: 'Ide jön egy referencia munka leírása',
+    images: [
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-700.jpg',
+        caption: 'ez egy város',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-700.jpg',
+        caption: 'ez egy hegy',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-700.jpg',
+        caption: 'ez is egy hegy',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-700.jpg',
+        caption: 'meg ez is',
+      },
+    ],
+  },
+  {
+    description: 'Ide jön egy másik referencia munka leírása',
+    images: [
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/4/img-700.jpg',
+        caption: 'ez egy város',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-700.jpg',
+        caption: 'ez egy hegy',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-700.jpg',
+        caption: 'ez is egy hegy',
+      },
+      {
+        src: 'https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-700.jpg',
+        caption: 'meg ez is',
+      },
+    ],
+  },
+];
+
 export const Company: CompanyInfo = {
   companyName: 'Generálkivitelezés.hu',
   phone: '+36 30 123 4567',
@@ -127,4 +179,6 @@ export const Company: CompanyInfo = {
   services,
   servicesExplained,
   aboutUs,
+  ourStory,
+  references,
 };

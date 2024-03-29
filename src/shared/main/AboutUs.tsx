@@ -1,16 +1,21 @@
 import { AboutUsItem } from '../../company.interface';
 
-function AboutUs({ aboutUs }: { aboutUs: AboutUsItem[] }) {
+function AboutUs({
+  aboutUs,
+  ourStory,
+}: {
+  aboutUs: AboutUsItem[];
+  ourStory: string;
+}) {
   return (
     <section id="company-info" className="py-8 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-semibold">Rólunk</h2>
-          <p className="mt-4 text-gray-600">
-            Ismerje meg jobban vállalatunkat, történetünket és amit képviselünk.
-          </p>
         </div>
-        <div className={`grid grid-cols-1 md:grid-cols-${aboutUs.length} gap-6`}>
+        <div
+          className={`grid grid-cols-1 md:grid-cols-${aboutUs.length} gap-6 mb-8`}
+        >
           {aboutUs.map(({ title, text, icon }) => (
             <div
               key="title"
@@ -22,6 +27,9 @@ function AboutUs({ aboutUs }: { aboutUs: AboutUsItem[] }) {
               <p className="text-gray-600">{text}</p>
             </div>
           ))}
+        </div>
+        <div className="text-justify mb-8">
+          <p className="mt-4 text-gray-600">{ourStory}</p>
         </div>
       </div>
     </section>
