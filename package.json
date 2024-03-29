@@ -11,6 +11,7 @@
     "build:dev": "webpack"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "@tailwindcss/forms": "^0.5.6",
     "@types/react": "^18.2.23",
     "@types/react-dom": "^18.2.8",

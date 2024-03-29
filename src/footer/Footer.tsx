@@ -11,8 +11,8 @@ function Footer({
       <div className="flex justify-between items-center">
         <div>
           <p>{companyName}</p>
-          <p>{phone}</p>
-          <p>{email}</p>
+          <p><a href={`tel:${phone}`}>{phone}</a></p>
+          <p><a href={`mailto:${email}`}>{email}</a></p>
         </div>
         <div>
           {socialMedia?.map(({ link, title }) => (

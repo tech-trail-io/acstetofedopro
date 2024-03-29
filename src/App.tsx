@@ -12,16 +12,16 @@ import { Company } from './company';
 import { Carousel, CarouselSlide } from './carousel/Carousel';
 
 function App() {
-  const { companyName, phone, email, logo, socialMedia } = Company;
+  const { companyName, phone, email, logo, socialMedia, title, testimonials } = Company;
 
   return (
     <>
     <Header companyName={companyName} logo={logo}></Header>
     <main>
-      <Jumbotron></Jumbotron>
+      <Jumbotron title={title}></Jumbotron>
       <Services></Services>
       <ServicesExplained></ServicesExplained>
-      <Testimonials></Testimonials>
+      <Testimonials testimonials={testimonials}></Testimonials>
       <Contact></Contact>
       <References></References>
       <CompanyInfo></CompanyInfo>

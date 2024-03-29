@@ -1,10 +1,8 @@
 import { scrollToSection } from '../utils/scroll';
 
-function Jumbotron() {
+function Jumbotron({ title }: { title: string }) {
     return <section className="jumbotron">
-            <h1 className="text-4xl text-white font-bold mb-4 ">
-            Gyors és Megbízható Tetőfedés Veszprém megyében!
-            </h1>
+            <h1 className="text-4xl text-white font-bold mb-4 ">{title}</h1>
             <p className="mb-6 text-white">Kérjen ingyenes árajánlatot most!</p>
             <button
                 className="bg-primary text-white px-6 py-2 rounded hover:bg-primary_lighter">
